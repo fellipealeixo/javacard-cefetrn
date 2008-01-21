@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" 
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  
+  <persistence-unit name="smartcefet-pu" transaction-type="RESOURCE_LOCAL">
+    <provider>oracle.toplink.essentials.ejb.cmp3.EntityManagerFactoryProvider</provider>
+    <class>br.cefetrn.smartcefet.dominio.Ambiente</class>
+    <class>br.cefetrn.smartcefet.dominio.Credencial</class>
+    <class>br.cefetrn.smartcefet.dominio.FuncionarioProxy</class>
+    <class>br.cefetrn.smartcefet.dominio.FuncionarioSistema</class>
+    <class>br.cefetrn.smartcefet.dominio.LogDeAmbientes</class>
+    <class>br.cefetrn.smartcefet.dominio.Ponto</class>
+    <class>br.cefetrn.smartcefet.dominio.TipoPonto</class>
+    <class>br.cefetrn.smartcefet.dominio.Permissao</class>
+    <properties>
+      <property name="toplink.logging.level" value="INFO"/>
+      <property name="toplink.jdbc.url" value="jdbc:postgresql://localhost/SmartCEFET"/>      
+      <property name="toplink.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="toplink.jdbc.user" value="postgres"/>
+      <property name="toplink.jdbc.password" value="postgres"/>
+      <property name="toplink.ddl-generation" value="create-tables"/> 
+     <!-- Comentario -->
+    </properties>
+  </persistence-unit>
+  
+</persistence>
