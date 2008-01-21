@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.6.0_03"/>
+	<classpathentry kind="lib" path="lib/gpcomm-0.9.jar"/>
+	<classpathentry kind="lib" path="lib/gpcomm-jscio-0.9.jar"/>
+	<classpathentry kind="lib" path="lib/postgresql-8.2-505.jdbc2.jar"/>
+	<classpathentry kind="lib" path="lib/toplink-essentials.jar"/>
+	<classpathentry kind="lib" path="lib/toplink-essentials-agent.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
