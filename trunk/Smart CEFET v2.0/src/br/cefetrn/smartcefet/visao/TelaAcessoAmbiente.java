@@ -337,7 +337,7 @@ public class TelaAcessoAmbiente extends JDialog {
 			jTextFieldHora = new JTextField();
 			jTextFieldHora.setBounds(new Rectangle(14, 16, 167, 20));
 			jTextFieldHora.setEditable(false);
-			jTextFieldHora.setText("13:27");
+			jTextFieldHora.setText("10:10");
 			jTextFieldHora.setFont(new Font("Dialog", Font.BOLD, 12));
 			jTextFieldHora.setBackground(new Color(224, 230, 217));
 		}
@@ -354,7 +354,7 @@ public class TelaAcessoAmbiente extends JDialog {
 			jTextFieldData = new JTextField();
 			jTextFieldData.setBounds(new Rectangle(179, 16, 133, 20));
 			jTextFieldData.setEditable(false);
-			jTextFieldData.setText("16-jan-08");
+			jTextFieldData.setText("22-jan-08");
 			jTextFieldData.setHorizontalAlignment(JTextField.RIGHT);
 			jTextFieldData.setFont(new Font("Dialog", Font.BOLD, 12));
 			jTextFieldData.setBackground(new Color(224, 230, 217));
@@ -495,6 +495,8 @@ public class TelaAcessoAmbiente extends JDialog {
 			@Override
 			public void cardRemoved(GpCommCardEvent arg0) {
 				System.out.println("cartão removido");
+				//FIXME Fazer via properties
+				jTextFieldVisor.setText("AUDIO VISUAL");
 				// TODO Auto-generated method stub			
 				
 			}
