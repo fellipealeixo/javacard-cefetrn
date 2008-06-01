@@ -2,21 +2,20 @@ package br.cefetrn.smartproject.smartinterface;
 
 // SMART INTERFACE 1.3: UTILIZANDO JAVA 6 - SMART CARD I/O
 
-import java.io.File;
-import java.io.FileReader;
+
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
+
 import java.util.Iterator;
 import java.util.List;
-import java.util.Scanner;
+
 
 import javax.smartcardio.Card;
 import javax.smartcardio.CardException;
 import javax.smartcardio.CardTerminal;
 import javax.smartcardio.ResponseAPDU;
 import javax.smartcardio.TerminalFactory;
-import javax.swing.JOptionPane;
+
 
 import br.cefetrn.smartproject.smartinterface.Guis.GuiAutenticacaoCartao;
 import br.cefetrn.smartproject.smartinterface.beans.Arquivo;
